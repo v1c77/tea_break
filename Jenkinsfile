@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('I wanta tea break') {
       steps {
-        sh 'python3 yincha.py'
+        sh 'pyenv local 3.9.5 & python --version && python yincha.py'
       }
     }
   }
