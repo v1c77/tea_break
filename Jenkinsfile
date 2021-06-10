@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('I wanta tea break') {
       steps {
-        sh 'pyenv local 3.9.5 & python --version && python yincha.py'
+        sh 'source  ~/.bashrc &&  source ~/.bash_profile  &&  pyenv local 3.9.5 &&  python --version && python yincha.py'
       }
     }
   }
